@@ -48,8 +48,10 @@ const App: React.FC = () => {
     // Construct mailto link
     const mailtoLink = `mailto:${CONTACT_INFO.email}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
     
-    // Open default email client
-    window.location.href = mailtoLink;
+    // Create a temporary anchor element and click it to ensure reliable mail client opening
+    const link = document.createElement('a');
+    link.href = mailtoLink;
+    link.click();
   };
 
   return (
@@ -370,7 +372,7 @@ const App: React.FC = () => {
                     required
                   ></textarea>
                 </div>
-                <button className="w-full py-4 rounded-xl bg-primary text-white font-bold hover:bg-blue-600 transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 text-lg">
+                <button type="submit" className="w-full py-4 rounded-xl bg-primary text-white font-bold hover:bg-blue-600 transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40 text-lg">
                   Send Message
                 </button>
               </form>
