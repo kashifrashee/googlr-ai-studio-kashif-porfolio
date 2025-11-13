@@ -1,8 +1,7 @@
 import { ContactInfo, Experience, Project, SkillCategory } from './types';
 
-// Direct link to the uploaded profile picture on Google Drive
-// Using the export=view format which is more reliable for embedding
-export const PROFILE_IMAGE_URL = "https://drive.google.com/uc?export=view&id=1vxbx3_gguih5G_xRIyRXnsIlvf0mhN96"; 
+// Direct link to the uploaded profile picture
+export const PROFILE_IMAGE_URL = "https://res.cloudinary.com/dsqqr5ctj/image/upload/v1763029042/wikwe6wxgaodcduprmhl.jpg"; 
 
 export const RESUME_LINK = "https://drive.google.com/file/d/1obncMOY2mugaA5QD9cqHMMLONfrO8edH/view?usp=sharing";
 
@@ -81,7 +80,7 @@ export const PROJECTS: Project[] = [
     role: "Architect",
     description: "Architected an AI-powered accessibility application providing on-screen guidance using Android Accessibility Services. Processed over 200 applications with 99% accuracy.",
     technologies: ["Accessibility Services", "Room Database", "Overlay Services"],
-    metrics: ["200+ Apps Processed", "99% Scanner Accuracy", "60% Reduced Learning Curve"],
+    metrics: ["200+ Apps Processed", "99% Scanner Accuracy"],
     imageUrl: "https://play-lh.googleusercontent.com/ZWdQJhNLTmoXE8yaPLeM2hS5L00tuBgSbhT2GKIeiyiWSHsqWWu1QS6kotYHwHjC8h6Fmffd8LE2xwS_bxyXkHU=w480-h960-rw",
     link: "https://play.google.com/store/apps/details?id=com.cjc.ezguide&pcampaignid=web_share"
   }
